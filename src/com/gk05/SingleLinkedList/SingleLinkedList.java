@@ -47,6 +47,7 @@ public class SingleLinkedList {
 	public void insertInLinkedList(int nodeValue, int location) {
 		SingleNode node = new SingleNode();
 		node.setValue(nodeValue);
+		
 		if (!existsLinkedList()) { // Linked List does not exists
 			System.out.println("The linked list does not exist!!");
 			return; 
@@ -59,11 +60,13 @@ public class SingleLinkedList {
 			tail = node; 
 		} else {// insert at specified location
 			SingleNode tempNode = head;
+			
 			int index = 0;
 			while (index < location - 1) {// loop till we reach specified node
 				tempNode = tempNode.getNext();
 				index++;
 			}//tempNode currently references to node after which we should insert new node
+			
 			SingleNode nextNode = tempNode.getNext(); //this is the immediate next node after new node
 			tempNode.setNext(node);//update reference of tempNode to reference to new node
 			node.setNext(nextNode);//update newly added nodes' next.

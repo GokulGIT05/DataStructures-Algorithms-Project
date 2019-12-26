@@ -22,7 +22,8 @@ public class SingleLinkedListMain {
 	
 		list.traverseLinkedList();
 		System.out.println();
-			
+		
+		System.out.println("----- Creation - Traverse - Inserion operations are done -----");
 		
 		System.out.println("\nSearching the node having value 40...");
 		list.searchNode(40);

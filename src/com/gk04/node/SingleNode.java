@@ -1,10 +1,10 @@
 package com.gk04.node;
 
-public  class SingleNode {
+public class SingleNode {
 	private int value;
 	private SingleNode next;
-	
-public int getValue() {
+
+	public int getValue() {
 		return value;
 	}
 
@@ -20,9 +20,9 @@ public int getValue() {
 		this.next = next;
 	}
 
-@Override
-public String toString() {
-	return  value + "";
-}
+	@Override
+	public String toString() {
+		return value + "";
+	}
 
 }
